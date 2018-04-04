@@ -30,3 +30,6 @@ ci_tests
 src/common/mmg.h
 
 include/*
+build/
+*egg-info/
+.vscode
