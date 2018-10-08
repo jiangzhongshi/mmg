@@ -20,3 +20,5 @@ target_include_directories(pymmgs PRIVATE "$ENV{EIGEN_INCLUDE_DIR}")
 target_include_directories(pymmgs PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../../../build/include/)
 
 
+target_compile_options(pymmgs PRIVATE -fPIC)
+

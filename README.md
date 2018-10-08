@@ -1,4 +1,20 @@
 # mmg - Surface and volume remeshers
+## Instruction for Python binding (Zhongshi) for my own reference
+First build mmg
+```Shell
+mkdir build
+cd build
+cmake ../
+make
+```
+Then build pybind
+```Shell
+cd libexamples/mmgs/pybind_example/
+export PYBIND11_INCLUDE_DIR=
+export EIGEN_INCLUDE_DIR=
+python setup.py develop
+```
+
 mmg is an open source software for bidimensional and tridimensional surface and volume remeshing.
 
 It provides 3 applications and 4 libraries:

@@ -75,6 +75,8 @@ CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/src/common/mmgcommon.h.in
 #####
 ###############################################################################
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 # Find "exotic" compilers
 IF (${CMAKE_C_COMPILER} MATCHES Clang OR ${CMAKE_C_COMPILER} MATCHES clang)
   # using clang
@@ -599,3 +601,4 @@ SET(CPACK_OUTPUT_FILE_PREFIX "../archives")
 #  ${CPACK_SOURCE_IGNORE_FILES}  )
 
 INCLUDE(CPack)
+
